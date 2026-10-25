@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="V Zhang 的个人网站。AI 应用工程师，专注 LLM 应用、Agent 与机器学习基础设施。">
+  <meta property="og:title" content="V Zhang · AI Engineer">
+  <meta property="og:description" content="工作经历、项目实践与技术栈。完整简历需动态验证码。">
+  <meta property="og:type" content="website">
+  <title>V Zhang · AI Engineer</title>
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">跳到主要内容</a>
+  <main class="resume" id="main">
+    <header class="resume-header">
+      <div class="identity">
+        <h1 data-i18n="name" data-private="name">V Zhang</h1>
+        <p class="headline" data-i18n="headline">AI 应用工程师 · LLM 应用 / AI Infra</p>
+        <div class="contact-line"><span data-i18n="phoneLabel">手机号：</span><span class="private-field contact-field" data-private="phone">验证后可见</span><span class="separator" aria-hidden="true">|</span><span data-i18n="emailLabel">邮箱：</span><span class="private-field contact-field" data-private="email">验证后可见</span></div>
+      </div>
+      <div class="page-tools" aria-label="简历工具" data-i18n-aria="toolsLabel">
+        <button id="language-toggle" type="button" aria-label="Switch to English">EN</button>
+        <span aria-hidden="true">/</span>
+        <button id="open-download-dialog" type="button" data-i18n="downloadResume">下载简历</button>
+      </div>
+    </header>
+
+    <section class="resume-section" id="education" aria-labelledby="education-title">
+      <h2 id="education-title" data-i18n="education">教育经历</h2>
+      <div class="education-row"><span class="date">2020-10 ~ 2021-12</span><h3 class="private-field" data-private="mastersSchool">学校名称未公开</h3><p data-i18n="masters">人工智能（硕士）</p></div>
+      <div class="education-row"><span class="date">2015-09 ~ 2019-06</span><h3 class="private-field" data-private="bachelorsSchool">学校名称未公开</h3><p data-i18n="bachelors">软件工程（本科）</p></div>
+    </section>
+
+    <section class="resume-section" id="experience" aria-labelledby="experience-title">
+      <h2 id="experience-title" data-i18n="experience">工作经历</h2>
+      <article class="experience-entry">
+        <div class="entry-heading"><span class="date" data-i18n="current">2025 — 至今</span><h3 data-i18n="currentRole">AI 应用工程师</h3><span class="company private-field" data-private="currentCompany">公司名称未公开</span></div>
+        <p data-i18n="currentDescription">主导 AI 应用设计与交付，覆盖模型接入、Agent 架构、Prompt / MCP / Skills 管理、评估、部署与服务治理。建设 LLM 平台的模型路由、配额、认证、可靠性及成本分摊能力，推动 AI 在助手、知识、运维和业务工具中的落地。</p>
+      </article>
+      <article class="experience-entry">
+        <div class="entry-heading"><span class="date">2023 — 2024</span><h3 data-i18n="platformRole">机器学习平台研发工程师</h3><span class="company private-field" data-private="platformCompany">公司名称未公开</span></div>
+        <p data-i18n="platformDescription">机器学习平台项目 Leader，从 0 到 1 开发搭建 AI Infra 基础设施，连接训练任务提交、Harbor 镜像仓库、Rancher 集群管理、标注平台、数据集管理、模型推理、发布与 Prometheus 监控告警。</p>
+      </article>
+      <article class="experience-entry">
+        <div class="entry-heading"><span class="date">2022</span><h3 data-i18n="reinforcementRole">AI 应用开发工程师</h3><span class="company private-field" data-private="reinforcementCompany">公司名称未公开</span></div>
+        <p data-i18n="reinforcementDescription">针对强化学习场景，参与机器学习平台研发。</p>
+      </article>
+    </section>
+
+    <section class="resume-section" id="internships" aria-labelledby="internships-title">
+      <h2 id="internships-title" data-i18n="internships">实习经历</h2>
+      <article class="internship-entry"><h3><span class="private-field internship-company" data-private="systemsCompany">实习单位未公开</span></h3><ul><li><span class="private-field inline-field" data-private="systemsProject">开源项目开发与维护</span>，<span data-i18n="systemOptimization">负责 CPU 指令集级别的优化。</span></li><li><span class="private-field inline-field" data-private="trafficProject">实时流量分析系统</span>，<span data-i18n="trafficAnalysis">利用 AI 检测网络异常流量。</span></li></ul></article>
+      <article class="internship-entry"><h3><span class="private-field internship-company" data-private="automationCompany">实习单位未公开</span></h3><ul><li><span class="private-field inline-field" data-private="automationProjects">自动化项目</span>，<span data-i18n="automationProjects">负责 AI 工厂场景自动化落地与 AI Infra 搭建。</span></li></ul></article>
+    </section>
+
+    <section class="resume-section" id="projects" aria-labelledby="projects-title">
+      <h2 id="projects-title" data-i18n="projects">项目经历</h2>
+      <article class="project-entry">
+        <h3>LLM-Gateway <span class="project-context" data-i18n="proxyContext">公司统一大模型多协议网关</span></h3>
+        <a class="source-link" href="https://github.com/BerriAI/litellm" target="_blank" rel="noopener noreferrer">github.com/BerriAI/litellm<span class="sr-only" data-i18n="newTab">（新标签页）</span></a>
+        <ul><li><span data-i18n="gatewayCapabilities">全球多地域部署</span>，<span data-i18n="gatewayRouting">支持跨地域请求转发、异地模型调用、会话粘性、Fallback 故障切换，以及面向成本和效果的智能路由；覆盖文本、图像、音频、视频、TTS 等多模态能力。</span> <strong class="emphasis" data-i18n="gatewayImpact">生产环境 QPS 峰值上千，是全公司 AI 能力基座。</strong></li><li data-i18n="gatewayObservability">建设 Trace 全链路跟踪和服务治理能力，支持调用链路排障、模型效果分析与运行状态监控。</li><li data-i18n="gatewayCost">建立以 API Key 为粒度的调用计量、成本对账和费用分摊体系，覆盖用户、业务项目及部门维度。</li></ul>
+      </article>
+      <article class="project-entry">
+        <h3 data-i18n="employeeAssistantTitle">OpenClaw 员工AI助手</h3>
+        <a class="source-link" href="https://github.com/openclaw/openclaw" target="_blank" rel="noopener noreferrer">github.com/openclaw/openclaw<span class="sr-only" data-i18n="newTab">（新标签页）</span></a>
+        <ul><li data-i18n="clawArchitecture">将 OpenClaw 从本地客户端改造为 24 小时运行的云端助手，接入企业 Skill Hub、Web UI、云端浏览器映射及飞书，已正式推广使用。</li><li data-i18n="clawUsage">支持自动化日志分析、告警处理，以及飞书文档和多维表格操作。</li></ul>
+      </article>
+      <article class="project-entry">
+        <h3>LLM-as-a-Judge <span class="project-context" data-i18n="judgeContext">业务问答评测体系</span></h3>
+        <ul><li data-i18n="judgeDataset">面向公司对公客户问答场景，收集脱敏后的真实用户问题，构建评测数据集，比较不同 Agent 框架的业务效果。</li><li data-i18n="judgeMethod">基于预定义评价标准，对回答的正确性、完整性、相关性和表达质量进行自动评分并生成评估理由，通过人工抽样复核支持不同模型、Agent 方案及 Prompt 版本的效果对比与迭代优化。</li></ul>
+      </article>
+      <article class="project-entry">
+        <h3>Dify <span class="project-context" data-i18n="difyContext">开源 LLM 应用平台 · 二次开发</span></h3>
+        <a class="source-link" href="https://github.com/langgenius/dify" target="_blank" rel="noopener noreferrer">github.com/langgenius/dify<span class="sr-only" data-i18n="newTab">（新标签页）</span></a>
+        <ul><li data-i18n="difyCapabilities">接入 OpenAI、Google、AWS 等模型供应商，向公司内部提供 Chat Assistant、Workflow、RAG 和 Agent 能力。</li><li data-i18n="difyRollout">负责平台企业化二次开发与内部推广，沉淀可复用的 AI 应用构建能力。</li></ul>
+      </article>
+      <article class="project-entry">
+        <h3>Label Studio <span class="project-context" data-i18n="labelContext">开源标注平台 · 二次开发</span></h3>
+        <a class="source-link" href="https://github.com/HumanSignal/label-studio" target="_blank" rel="noopener noreferrer">github.com/HumanSignal/label-studio<span class="sr-only" data-i18n="newTab">（新标签页）</span></a>
+        <ul><li data-i18n="labelDescription">使用 Three.js 将传统图像、视频标注扩展为 3D 全景标注，以四元数插值解决万向锁，并拓展后端权限管理。</li><li><span data-i18n="labelInnovation">设计并落地业内创新的 3D 全景图片、视频及 AI 标注数据方案，</span><strong class="emphasis" data-i18n="labelMetric">助力公司实现全球领先的 AI 全景视频剪辑能力</strong>。</li></ul>
+      </article>
+      <article class="project-entry">
+        <h3>Kubeflow <span class="project-context" data-i18n="kubeflowContext">开源机器学习平台 · 二次开发</span></h3>
+        <a class="source-link" href="https://github.com/kubeflow/kubeflow" target="_blank" rel="noopener noreferrer">github.com/kubeflow/kubeflow<span class="sr-only" data-i18n="newTab">（新标签页）</span></a>
+        <ul><li><strong class="emphasis" data-i18n="kubeflowOutcome">实现机器学习全流程自动化、任务化</strong>。</li><li data-i18n="kubeflowDescription">覆盖 GPU 共享与隔离、MiB 级调度、NVIDIA GPU Operator、Gang / Volcano 调度、分布式训练、Pipeline 编排、模型推理及在线服务；建设监控与飞书告警、镜像 Snapshot 系统。</li></ul>
+      </article>
+      <p class="disclosure" data-i18n="disclosure">项目成果来自个人履历；开源链接指向上游仓库，相关工作为二次开发。内部项目源码与业务数据不公开。</p>
+    </section>
+
+    <section class="resume-section" id="skills" aria-labelledby="skills-title">
+      <h2 id="skills-title" data-i18n="skills">技术栈</h2>
+      <ul class="skill-list"><li><strong data-i18n="languages">编程与后端：</strong>Python、Go、C++；Django、FastAPI、Gin</li><li><strong>AI / LLM：</strong>Agent、MCP、AgentScope、LLM-as-a-Judge</li><li><strong data-i18n="inference">训练与推理：</strong>PyTorch、TensorRT、Triton Inference Server</li><li><strong data-i18n="infrastructure">基础设施：</strong>Linux、Kubernetes、CRD / Operator、Docker、Rancher、Harbor</li><li><strong data-i18n="monitoring">监控与工程：</strong>Prometheus、OpenTelemetry；<span data-i18n="systems">并发、负载均衡、分布式系统</span></li><li><strong data-i18n="frontend">前端：</strong>React、Angular、Three.js</li></ul>
+    </section>
+
+    <section class="resume-section" id="about" aria-labelledby="about-title">
+      <h2 id="about-title" data-i18n="about">自我介绍</h2>
+      <p data-i18n="aboutDescription">对 AI 领域的探索与学习保持热情，关注清晰的接口、可靠的服务、可衡量的模型质量，以及让 AI 更易于规模化使用的基础设施。</p>
+    </section>
+    <dialog class="private-resume" id="download-dialog" aria-labelledby="private-title">
+      <button class="dialog-close" id="close-download-dialog" type="button" aria-label="关闭" data-i18n-aria="closeDialog">×</button>
+      <h2 id="private-title" data-i18n="privateTitle">查看完整信息，下载简历</h2>
+      <p class="access-description" id="code-hint" data-i18n="codeHint">请向本人索取 Google Authenticator 当前验证码。</p>
+      <form id="resume-access-form">
+        <label for="resume-password" data-i18n="passwordLabel">输入 6 位验证码</label>
+        <div class="access-controls">
+          <input id="resume-password" type="text" name="resume-code" inputmode="numeric" pattern="[0-9]{6}" autocomplete="one-time-code" autocapitalize="off" spellcheck="false" required minlength="6" maxlength="6" aria-describedby="code-hint download-status">
+          <button id="download-resume" type="submit" data-i18n="unlockDownload">验证并下载</button>
+        </div>
+        <p id="download-status" role="status" aria-live="polite"></p>
+      </form>
+      <noscript><p class="access-description">下载简历需要开启 JavaScript 并连接验证码校验服务。</p></noscript>
+    </dialog>
+    <footer class="resume-footer"><span>© <span id="year">2026</span> <span data-i18n="name">V Zhang</span></span><span data-i18n="privacyFooter">完整履历仅在验证码校验后提供</span></footer>
+  </main>
+</body>
+</html>

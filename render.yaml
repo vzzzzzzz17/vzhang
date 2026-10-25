@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: v-zhang-resume
+    runtime: node
+    plan: free
+    buildCommand: npm install --ignore-scripts
+    startCommand: npm start
+    healthCheckPath: /
+    envVars:
+      - key: HOST
+        value: 0.0.0.0
+      - key: PORT
+        value: 10000
+      - key: RESUME_PRIVATE_DIR
+        value: /etc/secrets
+      - key: RESUME_TOTP_SECRET_FILE
+        value: /etc/secrets/authenticator-secret.txt
+      - key: RESUME_STATE_DIR
+        value: /tmp/vzhang-state
+      - key: SITE_ORIGIN
+        sync: false

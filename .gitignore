@@ -1,0 +1,13 @@
+.DS_Store
+node_modules/
+*.log
+*.pdf
+*.password
+*password*.txt
+*secret*.txt
+authenticator-setup.html
+authenticator-qr.png
+authenticator-uri.txt
+authenticator-state.json
+.vzhang-private/
+render-deploy-bundle/
